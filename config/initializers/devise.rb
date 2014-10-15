@@ -4,7 +4,7 @@ Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # config.secret_key = '73bd9b008f3be5fda79eb3ab9587ef13148cdb7767824b9a367e7252ebb8b93b4aea807ce82922485a55f5ff7b68911a20316b73fa535c0e252556d051da81da'
+  # config.secret_key = 'eb6d72a69726b8652b9bc9ba751498c5f875925f9dd95704414ace4443c2e5980737cd61413660b055ad23cf2ede5718343ba3da0f79c5978484e95f794edff7'
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
@@ -70,7 +70,7 @@ Devise.setup do |config|
   # It will change confirmation, password recovery and other workflows
   # to behave the same regardless if the e-mail provided was right or wrong.
   # Does not affect registerable.
-  config.paranoid = true
+  # config.paranoid = true
 
   # By default Devise will store the user in session. You can skip storage for
   # particular strategies by setting this option.
@@ -97,7 +97,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = 'fa6c5e2b06c159c14287f19efd4a4b960c6b4a47b01e9b3463f957f183d17d7996f816d8e2dd250e1bf2362d69aa7a12120da5ebe60250d24a368ecd7f32e74f'
+  # config.pepper = 'fae0b17d648476a690453961017babf60fe4d87d41d03fe443722933ee3348a75dcdb430b868fbcbb21c02ae6e2b4dc65f43dd01acd9a3fd72ea07bacb5b5b94'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without
@@ -119,7 +119,7 @@ Devise.setup do |config|
   # initial account confirmation) to be applied. Requires additional unconfirmed_email
   # db field (see migrations). Until confirmed, new email is stored in
   # unconfirmed_email column, and copied to email column on successful confirmation.
-  config.reconfirmable = false
+  config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
   # config.confirmation_keys = [ :email ]
