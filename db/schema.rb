@@ -27,12 +27,10 @@ ActiveRecord::Schema.define(version: 20141016193430) do
 
   create_table "orders", force: true do |t|
     t.integer  "user_id"
-    t.integer  "item_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  add_index "orders", ["item_id"], name: "index_orders_on_item_id"
   add_index "orders", ["user_id"], name: "index_orders_on_user_id"
 
   create_table "users", force: true do |t|
