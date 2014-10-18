@@ -28,12 +28,17 @@ gem 'spring',        group: :development
 
 gem 'bootstrap-generators'
 gem 'devise'
-gem 'rspec-rails'
-gem 'factory_girl'
 
 group :development do
 	gem 'better_errors'
 	gem 'binding_of_caller'
+end
+
+group :test do
+	gem 'cucumber-rails'
+	gem 'rspec-rails'
+	gem 'factory_girl_rails'
+	gem 'database_cleaner'
 end
 
 # Use ActiveModel has_secure_password
